@@ -1,0 +1,7 @@
+{
+  "serverUrl": "http://localhost:3000",
+  "apiVersion": "v1",
+  "socketUrl": "http://localhost:3000",
+  "timeout": 30,
+  "enableDebugLogs": true
+}

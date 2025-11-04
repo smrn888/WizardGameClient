@@ -1,0 +1,5 @@
+<linker>
+    <assembly fullname="Newtonsoft.Json" preserve="all"/>
+    <assembly fullname="SocketIOClient" preserve="all"/>
+    <assembly fullname="SocketIOClient.Newtonsoft.Json" preserve="all"/>
+</linker>

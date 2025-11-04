@@ -1,0 +1,209 @@
+{
+  "items": [
+    {
+      "id": "basic_wand",
+      "name": "Basic Wand",
+      "type": "wand",
+      "price": 0,
+      "description": "A simple wand for beginners. Every wizard starts here.",
+      "requiredLevel": 0,
+      "consumable": false,
+      "stats": {
+        "damage": 1.0,
+        "defense": 0,
+        "speed": 0
+      },
+      "effect": null
+    },
+    {
+      "id": "oak_wand",
+      "name": "Oak Wand",
+      "type": "wand",
+      "price": 100,
+      "description": "A sturdy oak wand. Loyal and reliable.",
+      "requiredLevel": 5,
+      "consumable": false,
+      "stats": {
+        "damage": 1.2,
+        "defense": 0,
+        "speed": 0
+      },
+      "effect": null
+    },
+    {
+      "id": "elder_wand",
+      "name": "Elder Wand",
+      "type": "wand",
+      "price": 1000,
+      "description": "The legendary Elder Wand. The most powerful wand in existence.",
+      "requiredLevel": 20,
+      "consumable": false,
+      "stats": {
+        "damage": 2.0,
+        "defense": 0,
+        "speed": 0
+      },
+      "effect": null
+    },
+    {
+      "id": "basic_robe",
+      "name": "Basic Robe",
+      "type": "robe",
+      "price": 0,
+      "description": "Standard student robes. Simple but functional.",
+      "requiredLevel": 0,
+      "consumable": false,
+      "stats": {
+        "damage": 0,
+        "defense": 1.0,
+        "speed": 0
+      },
+      "effect": null
+    },
+    {
+      "id": "enchanted_robe",
+      "name": "Enchanted Robe",
+      "type": "robe",
+      "price": 200,
+      "description": "Magically enhanced robes that provide extra protection.",
+      "requiredLevel": 10,
+      "consumable": false,
+      "stats": {
+        "damage": 0,
+        "defense": 1.5,
+        "speed": 0
+      },
+      "effect": null
+    },
+    {
+      "id": "nimbus_2000",
+      "name": "Nimbus 2000",
+      "type": "broom",
+      "price": 500,
+      "description": "A fast and reliable racing broom. Perfect for Quidditch.",
+      "requiredLevel": 8,
+      "consumable": false,
+      "stats": {
+        "damage": 0,
+        "defense": 0,
+        "speed": 1.5
+      },
+      "effect": null
+    },
+    {
+      "id": "firebolt",
+      "name": "Firebolt",
+      "type": "broom",
+      "price": 2000,
+      "description": "The fastest broom available. Used by professional Quidditch players.",
+      "requiredLevel": 15,
+      "consumable": false,
+      "stats": {
+        "damage": 0,
+        "defense": 0,
+        "speed": 2.0
+      },
+      "effect": null
+    },
+    {
+      "id": "health_potion",
+      "name": "Health Potion",
+      "type": "potion",
+      "price": 50,
+      "description": "Restores 50 HP instantly.",
+      "requiredLevel": 0,
+      "consumable": true,
+      "stats": null,
+      "effect": {
+        "healAmount": 50,
+        "xpMultiplier": 0,
+        "duration": 0
+      }
+    },
+    {
+      "id": "greater_health_potion",
+      "name": "Greater Health Potion",
+      "type": "potion",
+      "price": 100,
+      "description": "Restores 100 HP instantly.",
+      "requiredLevel": 5,
+      "consumable": true,
+      "stats": null,
+      "effect": {
+        "healAmount": 100,
+        "xpMultiplier": 0,
+        "duration": 0
+      }
+    },
+    {
+      "id": "xp_boost_potion",
+      "name": "XP Boost Potion",
+      "type": "potion",
+      "price": 150,
+      "description": "Doubles XP gain for 30 minutes.",
+      "requiredLevel": 3,
+      "consumable": true,
+      "stats": null,
+      "effect": {
+        "healAmount": 0,
+        "xpMultiplier": 2.0,
+        "duration": 1800
+      }
+    },
+    {
+      "id": "owl",
+      "name": "Snowy Owl",
+      "type": "pet",
+      "price": 300,
+      "description": "A loyal and beautiful companion. Delivers messages.",
+      "requiredLevel": 5,
+      "consumable": false,
+      "stats": null,
+      "effect": null
+    },
+    {
+      "id": "cat",
+      "name": "Black Cat",
+      "type": "pet",
+      "price": 250,
+      "description": "A mysterious feline friend with keen senses.",
+      "requiredLevel": 5,
+      "consumable": false,
+      "stats": null,
+      "effect": null
+    },
+    {
+      "id": "toad",
+      "name": "Toad",
+      "type": "pet",
+      "price": 100,
+      "description": "A humble but loyal companion.",
+      "requiredLevel": 1,
+      "consumable": false,
+      "stats": null,
+      "effect": null
+    },
+    {
+      "id": "horcrux",
+      "name": "Horcrux",
+      "type": "special",
+      "price": 5000,
+      "description": "An extra life. Use wisely.",
+      "requiredLevel": 20,
+      "consumable": true,
+      "stats": null,
+      "effect": null
+    },
+    {
+      "id": "time_turner",
+      "name": "Time Turner",
+      "type": "special",
+      "price": 10000,
+      "description": "Resets all spell cooldowns instantly.",
+      "requiredLevel": 25,
+      "consumable": true,
+      "stats": null,
+      "effect": null
+    }
+  ]
+}

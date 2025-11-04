@@ -1,0 +1,165 @@
+{
+  "version": "4.1.0",
+  "name": "Hogwarts Castle - Complete 10 Rooms Enhanced",
+  "tileSize": 64,
+  "width": 150,
+  "height": 100,
+  "spawnPoint": { "x": 75, "y": 35 },
+
+  "zones": [
+    {
+      "id": "great_hall",
+      "name": "GreatHall",
+      "bounds": { "x": 60, "y": 25, "width": 50, "height": 28 },
+      "texture": "GreatHall",
+      "description": "The Great Hall of Hogwarts",
+      "lighting": { "ambient": 0.9, "tint": "#fff8dc" },
+      "exits": [
+        { "side": "north", "connects_to": "library", "door_at": 23 },
+        { "side": "south", "connects_to": "courtyard", "door_at": 23 },
+        { "side": "west", "connects_to": "corridor", "door_at": 12 },
+        { "side": "east", "connects_to": "gryffindor_common_room", "door_at": 12 }
+      ]
+    },
+    {
+      "id": "library",
+      "name": "Restricted_Library",
+      "bounds": { "x": 60, "y": 0, "width": 50, "height": 22 },
+      "texture": "Restricted_Library.png",
+      "description": "Restricted Library - Forbidden Knowledge",
+      "lighting": { "ambient": 0.6, "tint": "#f5f5dc" },
+      "exits": [
+        { "side": "south", "connects_to": "great_hall", "door_at": 23 }
+      ]
+    },
+    {
+      "id": "gryffindor_common_room",
+      "name": "Gryffindor_Common_Room",
+      "bounds": { "x": 113, "y": 25, "width": 37, "height": 28 },
+      "texture": "Gryffindor_Common_Room.png",
+      "description": "Gryffindor Common Room",
+      "lighting": { "ambient": 0.8, "tint": "#ff6347" },
+      "exits": [
+        { "side": "west", "connects_to": "great_hall", "door_at": 12 }
+      ]
+    },
+    {
+      "id": "corridor",
+      "name": "Main_Corridor",
+      "bounds": { "x": 0, "y": 25, "width": 57, "height": 28 },
+      "texture": "Main_Corridor.png",
+      "description": "Main Corridor",
+      "lighting": { "ambient": 0.7, "tint": "#dcdcdc" },
+      "exits": [
+        { "side": "east", "connects_to": "great_hall", "door_at": 12 },
+        { "side": "south", "connects_to": "tower_stairs", "door_at": 25 }
+      ]
+    },
+    {
+      "id": "courtyard",
+      "name": "Castle_Courtyard",
+      "bounds": { "x": 60, "y": 56, "width": 50, "height": 28 },
+      "texture": "Castle_Courtyard.png",
+      "description": "Castle Courtyard",
+      "lighting": { "ambient": 1.0, "tint": "#fffacd" },
+      "exits": [
+        { "side": "north", "connects_to": "great_hall", "door_at": 23 },
+        { "side": "east", "connects_to": "black_lake", "door_at": 12 },
+        { "side": "south", "connects_to": "gringotts_bank", "door_at": 23 }
+      ]
+    },
+    {
+      "id": "black_lake",
+      "name": "Black_Lake",
+      "bounds": { "x": 113, "y": 56, "width": 37, "height": 28 },
+      "texture": "Black_Lake.png",
+      "description": "The Black Lake",
+      "lighting": { "ambient": 0.7, "tint": "#4682b4" },
+      "exits": [
+        { "side": "west", "connects_to": "courtyard", "door_at": 12 }
+      ]
+    },
+    {
+      "id": "tower_stairs",
+      "name": "Tower_Stairs",
+      "bounds": { "x": 0, "y": 56, "width": 57, "height": 14 },
+      "texture": "Tower_Stairs.png",
+      "description": "Tower Stairs",
+      "lighting": { "ambient": 0.5, "tint": "#555555" },
+      "exits": [
+        { "side": "north", "connects_to": "corridor", "door_at": 25 },
+        { "side": "south", "connects_to": "astronomy_tower", "door_at": 25 }
+      ]
+    },
+    {
+      "id": "astronomy_tower",
+      "name": "Astronomy_Tower",
+      "bounds": { "x": 0, "y": 72, "width": 57, "height": 28 },
+      "texture": "Astronomy_Tower.png",
+      "description": "Astronomy Tower",
+      "lighting": { "ambient": 0.3, "tint": "#191970" },
+      "exits": [
+        { "side": "north", "connects_to": "tower_stairs", "door_at": 25 }
+      ]
+    },
+    {
+      "id": "gringotts_bank",
+      "name": "Lower_Corridor",
+      "bounds": { "x": 60, "y": 87, "width": 50, "height": 13 },
+      "texture": "Lower_Corridor.png",
+      "description": "Lower_Corridor",
+      "lighting": { "ambient": 0.5, "tint": "#666666" },
+      "exits": [
+        { "side": "north", "connects_to": "courtyard", "door_at": 23 },
+        { "side": "east", "connects_to": "potions_classroom", "door_at": 5 }
+      ]
+    },
+    {
+      "id": "potions_classroom",
+      "name": "Potions_Dungeon",
+      "bounds": { "x": 113, "y": 87, "width": 37, "height": 13 },
+      "texture": "Potions_Dungeon.png",
+      "description": "Potions Classroom",
+      "lighting": { "ambient": 0.4, "tint": "#2f4f4f" },
+      "exits": [
+        { "side": "west", "connects_to": "gringotts_bank", "door_at": 5 }
+      ]
+    }
+  ],
+
+  "spawns": {
+    "player": { "x": 85, "y": 39 },
+    "enemies": [
+      { "x": 85, "y": 11, "zone": "library", "name": "Draco Malfoy", "house": "slytherin" },
+      { "x": 28, "y": 86, "zone": "astronomy_tower", "name": "Luna Lovegood", "house": "ravenclaw" },
+      { "x": 131, "y": 93, "zone": "potions_classroom", "name": "Bellatrix", "house": "deatheater" },
+      { "x": 28, "y": 39, "zone": "corridor", "name": "Cedric Diggory", "house": "hufflepuff" }
+    ],
+    "dementors": [
+      { "x": 85, "y": 70, "zone": "courtyard" }
+    ]
+  },
+
+  "vents": [
+    { "id": "v1", "x": 85, "y": 39, "zone": "great_hall", "connects": ["v2", "v3"] },
+    { "id": "v2", "x": 85, "y": 11, "zone": "library", "connects": ["v1", "v4"] },
+    { "id": "v3", "x": 85, "y": 70, "zone": "courtyard", "connects": ["v1", "v5"] },
+    { "id": "v4", "x": 131, "y": 39, "zone": "gryffindor_common_room", "connects": ["v2"] },
+    { "id": "v5", "x": 131, "y": 70, "zone": "black_lake", "connects": ["v3", "v6"] },
+    { "id": "v6", "x": 131, "y": 93, "zone": "potions_classroom", "connects": ["v5"] }
+  ],
+
+  "lighting": {
+    "globalAmbient": 0.4,
+    "dayNightCycle": false,
+    "shadows": true
+  },
+
+  "minimap": {
+    "enabled": true,
+    "scale": 0.08,
+    "position": "top-right",
+    "showPlayers": true,
+    "showZones": true
+  }
+}

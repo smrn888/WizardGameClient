@@ -1,0 +1,103 @@
+{
+  "spells": [
+    {
+      "name": "Lumos",
+      "damage": 10,
+      "cooldown": 0.5,
+      "speed": 5.0,
+      "range": 50,
+      "manaCost": 5,
+      "unlockLevel": 0,
+      "description": "A basic light spell. Low damage but fast cooldown.",
+      "colorHex": "#FFFFFF"
+    },
+    {
+      "name": "Stupefy",
+      "damage": 20,
+      "cooldown": 0.8,
+      "speed": 5.6,
+      "range": 50,
+      "manaCost": 10,
+      "unlockLevel": 0,
+      "description": "The stunning spell. Good balance of power and speed.",
+      "colorHex": "#FF0000"
+    },
+    {
+      "name": "Expelliarmus",
+      "damage": 25,
+      "cooldown": 1.2,
+      "speed": 6.3,
+      "range": 50,
+      "manaCost": 15,
+      "unlockLevel": 3,
+      "description": "The disarming charm. Powerful and fast.",
+      "colorHex": "#FF6600"
+    },
+    {
+      "name": "Protego",
+      "damage": 0,
+      "cooldown": 5.0,
+      "speed": 0,
+      "range": 0,
+      "manaCost": 20,
+      "unlockLevel": 5,
+      "description": "Shield charm. Blocks 50% of incoming damage for 3 seconds.",
+      "colorHex": "#00CCFF"
+    },
+    {
+      "name": "Expecto Patronum",
+      "damage": 50,
+      "cooldown": 8.0,
+      "speed": 4.0,
+      "range": 70,
+      "manaCost": 30,
+      "unlockLevel": 10,
+      "description": "The Patronus charm. Extremely effective against Dementors.",
+      "colorHex": "#99CCFF"
+    },
+    {
+      "name": "Avada Kedavra",
+      "damage": 100,
+      "cooldown": 5.0,
+      "speed": 4.2,
+      "range": 60,
+      "manaCost": 50,
+      "unlockLevel": 15,
+      "description": "The Killing Curse. One of the three Unforgivable Curses.",
+      "colorHex": "#00FF00"
+    },
+    {
+      "name": "Imperio",
+      "damage": 0,
+      "cooldown": 10.0,
+      "speed": 0,
+      "range": 30,
+      "manaCost": 40,
+      "unlockLevel": 20,
+      "description": "The Imperius Curse. Controls the target for 5 seconds.",
+      "colorHex": "#9933FF"
+    },
+    {
+      "name": "Crucio",
+      "damage": 40,
+      "cooldown": 3.0,
+      "speed": 5.0,
+      "range": 50,
+      "manaCost": 35,
+      "unlockLevel": 20,
+      "description": "The Cruciatus Curse. Causes intense pain over time.",
+      "colorHex": "#CC0000"
+    },
+    {
+      "name": "Sectumsempra",
+      "damage": 60,
+      "cooldown": 4.0,
+      "speed": 5.5,
+      "range": 55,
+      "manaCost": 45,
+      "unlockLevel": 30,
+      "description": "A dark spell that causes deep cuts. Very dangerous.",
+      "colorHex": "#660000"
+    }
+  ]
+}
